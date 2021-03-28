@@ -43,7 +43,7 @@ class BaseCase:
         self.input_key(basic_locators.SIGN_PASSWORD, 'qwerty1!', True)
 
     def logout(self):
-        self.click(basic_locators.LOGOUT_TEST, 15)
+        self.click(basic_locators.SESSION_TITLE, 15)
         time.sleep(1)
         self.click(basic_locators.LOGOUT_BUTTON, 15)
 
