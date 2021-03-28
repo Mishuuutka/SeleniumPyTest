@@ -37,7 +37,8 @@ class BaseCase:
         if enter:
             input_key.send_keys(Keys.ENTER)
 
-    def login(self):
+    @pytest.fixture(scope='function')
+    def logined_browser(self):
         self.click(basic_locators.SIGN_BUTTON)
         self.input_key(basic_locators.SIGN_EMAIL, 'mishuuuutka@gmail.com')
         self.input_key(basic_locators.SIGN_PASSWORD, 'qwerty1!', True)
@@ -46,6 +47,7 @@ class BaseCase:
         self.click(basic_locators.SESSION_TITLE, 15)
         time.sleep(1)
         self.click(basic_locators.LOGOUT_BUTTON, 15)
+
 
 
 
