@@ -3,5 +3,4 @@
 .pytest_cache/
 __pychache__/
 
-#Chrome Driver
 chromedriver.exe
