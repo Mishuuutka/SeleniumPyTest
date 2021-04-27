@@ -1,2 +1,2 @@
-# 2021-1-MAILRU-SDET-Python-M-Baynakov
+# Selenium + PyTest
 Учебный проект
